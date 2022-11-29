@@ -9,9 +9,10 @@ def main(s):
     """
     i=0
     n=0
+    s.lower()
     while i<len(s):
-        if  s[i]=='a' or s[i]=='e' or s[i]=='i' or s[i]=='o' or s[i]=='u' or s[i]=='y':
+        if  s[i]=='a' or s[i]=='e' or s[i]=='i' or s[i]=='o' or s[i]=='u' or s[i]=='A' or s[i]=='E' or s[i]=='I' or s[i]=='O' or s[i]=='U':
             n+=1
         i+=1
     return len(s)-n
-print(main('tyuydxocx'))
+print(main('AaBbss'))
