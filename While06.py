@@ -10,9 +10,10 @@ def main(s):
     i=0
     n=0
     while i<len(s):
-        if  s[i].lower()=='a' or s[i].lower()=='e' or s[i].lower()=='i' or s[i].lower()=='o' or s[i].lower()=='u':
-            n+=1
+        if s[i].isalpha():
+            if  s[i].lower()!='a' and s[i].lower()!='e' and s[i].lower()!='i' and s[i].lower()!='o' and s[i].lower()!='u':
+                n+=1
         i+=1
-    return len(s)-n
-    
-print(main('BREAND'))
+    return n
+
+print(main('1223BREAND'))
